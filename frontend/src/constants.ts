@@ -1,6 +1,6 @@
 // описание всех неободимых констант для работы приложения
 
-//import { UserTypesTraining } from '@fit-friends/types';
+import { UserTypesTraining } from '../src/libs/types/src/lib/user-types-training.enum';
 
 export const BASE_RESPONSE_URL = 'http//localhost:4000/api';
 export const FILE_URL = 'http//localhost:4000';
@@ -135,16 +135,16 @@ export const MAX_CERTIFICATES_COUNT_PER_PAGE = 3;
 export const CERTIFICATE_FILE_TYPES = ['jpg', 'pdf', 'png'];
 export const VIDEO_FILE_TYPES = ['mov', 'avi', 'mp4'];
 
-// export const TrainingTypeImageMap = {
-// [UserTypesTraining.Yoga]: 'img/content/thumbnails/training-01.jpg',
-//  [UserTypesTraining.Running]: 'img/content/thumbnails/training-06.jpg',
-//  [UserTypesTraining.Boxing]: 'img/content/thumbnails/training-03.jpg',
-//  [UserTypesTraining.Stretching]: 'img/content/thumbnails/training-12.jpg',
-//  [UserTypesTraining.Crossfit]: 'img/content/thumbnails/training-02.jpg',
-//  [UserTypesTraining.Aerobics]: 'img/content/thumbnails/training-07.jpg',
-//  [UserTypesTraining.Pilates]: 'img/content/thumbnails/training-09.jpg',
-//  [UserTypesTraining.Power]: 'img/content/thumbnails/training-10.jpg',
-//};
+export const TrainingTypeImageMap = {
+    [UserTypesTraining.Yoga]: 'img/content/thumbnails/training-01.jpg',
+    [UserTypesTraining.Running]: 'img/content/thumbnails/training-06.jpg',
+    [UserTypesTraining.Boxing]: 'img/content/thumbnails/training-03.jpg',
+    [UserTypesTraining.Stretching]: 'img/content/thumbnails/training-12.jpg',
+    [UserTypesTraining.Crossfit]: 'img/content/thumbnails/training-02.jpg',
+    [UserTypesTraining.Aerobics]: 'img/content/thumbnails/training-07.jpg',
+    [UserTypesTraining.Pilates]: 'img/content/thumbnails/training-09.jpg',
+    [UserTypesTraining.Power]: 'img/content/thumbnails/training-10.jpg',
+};
 
 export const TYPE_TRAINING_ZOD = [
   'йога',

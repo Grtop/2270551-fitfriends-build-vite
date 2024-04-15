@@ -5,7 +5,7 @@ import { CreateUserDto } from '../../types/create-user.dto';
 import { dropTokens, saveTokens } from '../../services/tokens';
 import { LoginUserDto } from '../../types/login-user.dto';
 import { AsyncThunkConfig } from '../../types/async-thunk-config';
-import { isAxiosError } from 'axios';
+import { AxiosError } from 'axios';
 import { toast } from 'react-toastify';
 import { UpdateUserDto } from '../../types/update-user.dto';
 import { UploadedFileRdo } from '../../types/uploaded-files.rdo';
@@ -36,7 +36,7 @@ export const registerUserAction = createAsyncThunk<
     return data;
   } catch (err) {
     let message = 'Неизвестная ошибка user/register';
-    if (isAxiosError(err)) {
+    if (new AxiosError(err)) {
       message = err.response?.data.message;
     }
     toast.error(message);
@@ -56,7 +56,7 @@ export const loginUserAction = createAsyncThunk<
   } catch (err) {
     let message = 'Неизвестная ошибка user/login';
 
-    if (isAxiosError(err)) {
+    if (new AxiosError(err)) {
       message = err.response?.data.message;
     }
     toast.error(message);
@@ -73,7 +73,7 @@ export const logoutAction = createAsyncThunk<void, undefined, AsyncThunkConfig>(
     } catch (err) {
       let message = 'Неизвестная ошибка user/logout';
 
-      if (isAxiosError(err)) {
+      if (new AxiosError(err)) {
         message = err.response?.data.message;
       }
       toast.error(message);

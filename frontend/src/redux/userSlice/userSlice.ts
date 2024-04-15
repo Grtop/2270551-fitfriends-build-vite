@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-//import { IBalance, INotify } from '@fit-friends/types';
+import { IBalance, INotify } from '@fit-friends/types';
 import { AuthStatus, NameSpace, SliceStatus } from '../../constants';
 import {
   registerUserAction,

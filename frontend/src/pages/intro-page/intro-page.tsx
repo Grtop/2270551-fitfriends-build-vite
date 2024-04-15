@@ -65,7 +65,7 @@ function IntroPage(): JSX.Element {
             Регистрация
           </Link>
           <p className="intro__text">
-            У вас есть аккаунт?
+            Есть аккаунт?
             <Link className="intro__link" to={AppRoute.Login}>
               Вход
             </Link>

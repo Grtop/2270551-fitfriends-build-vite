@@ -6,7 +6,7 @@ import LoginPage from './pages/login-page/login-page';
 import RegisterPage from './pages/register-page/register-page';
 import MainPage from './pages/main-page/main-page';
 import TrainerRoomPage from './pages/trainer-room-page/trainer-room-page';
-// import ClientRoomPage from './pages/client-room-page/client-room-page';
+import ClientRoomPage from './pages/client-room-page/client-room-page';
 import ErrorPage from './pages/error-page/error-page';
 import { useAppSelector } from './redux/store';
 import {
@@ -90,6 +90,15 @@ export function App() {
         element={
           <PrivateRoute isAuth={isAuth}>
             {isTrainer ? <TrainerRoomPage /> : <Navigate to={AppRoute.Root} />}
+          </PrivateRoute>
+        }
+      />
+
+      <Route
+        path={AppRoute.ClientRoom}
+        element={
+          <PrivateRoute isAuth={isAuth}>
+            {!isTrainer ? <ClientRoomPage /> : <Navigate to={AppRoute.Root} />}
           </PrivateRoute>
         }
       />

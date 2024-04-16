@@ -10,7 +10,7 @@ import {
   CaloriesOfDay,
   CaloriesOfTotal,
   MAXIMUM_TRAINING_TYPES_CHOICE,
-} from '@fit-friends/types';
+} from '../../libs/types/src/index';
 import { upFirstWord } from '../../helper/utils';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useAppDispatch, useAppSelector } from '../../redux/store';

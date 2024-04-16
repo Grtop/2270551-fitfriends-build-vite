@@ -1,4 +1,4 @@
-import { OrderQueryDefault } from '@fit-friends/types';
+import { OrderQueryDefault } from '../libs/types/src/index';
 
 export class OrderQuery {
   public limit?: number = OrderQueryDefault.Limit;

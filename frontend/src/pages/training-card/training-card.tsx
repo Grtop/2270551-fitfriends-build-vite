@@ -6,7 +6,7 @@ import {
   TrainingDescriptionLength,
   TrainingPrice,
   TrainingTitleLength,
-} from '@fit-friends/types';
+} from '../../libs/types/src/index';
 import { getTraining, getUserInfo } from '../../redux/trainingSlice/selectors';
 import { getBalance } from '../../redux/userSlice/selectors';
 import { getTrainingId } from '../../helper/utils';

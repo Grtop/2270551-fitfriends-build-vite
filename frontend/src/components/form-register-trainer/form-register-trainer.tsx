@@ -14,7 +14,7 @@ import { ChangeEvent, useEffect, useState } from 'react';
 import {
   MAXIMUM_TRAINING_TYPES_CHOICE,
   TrainerMeritLength,
-} from '@fit-friends/types';
+} from '../../libs/types/src/index';
 import { useAppDispatch, useAppSelector } from '../../redux/store';
 import {
   updateUserAction,

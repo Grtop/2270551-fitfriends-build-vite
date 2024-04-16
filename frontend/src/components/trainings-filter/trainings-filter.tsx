@@ -7,7 +7,7 @@ import {
   TrainingDuration,
   TrainingPrice,
   UserTypesTraining,
-} from '@fit-friends/types';
+} from '../../libs/types/src/index';
 import { debounce } from '../../helper/utils';
 import { FILTER_QUERY_DELAY, SortDirection } from '../../constants';
 import RangeSlider from '../range-slider/range-slider';

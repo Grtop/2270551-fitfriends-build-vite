@@ -1,4 +1,4 @@
-import { DefaultTraining } from '@fit-friends/types';
+import { DefaultTraining } from '../libs/types/src/index';
 
 export class TrainingQuery {
   public limit?: number = DefaultTraining.Limit;

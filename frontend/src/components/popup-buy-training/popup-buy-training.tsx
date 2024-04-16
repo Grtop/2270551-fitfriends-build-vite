@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { TrainingRdo } from '../../types/training.rdo';
 import { useAppDispatch } from '../../redux/store';
-import { TypeOfOrder, TypeOfPayment } from '@fit-friends/types';
+import { TypeOfOrder, TypeOfPayment } from '../../libs/types/src/index';
 import {
   buyTrainingAction,
   fetchBalanceAction,

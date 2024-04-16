@@ -23,7 +23,7 @@ import {
   UserLocation,
   UserNameLength,
   UserTypesTraining,
-} from '@fit-friends/types';
+} from '../../libs/types/src/index';
 import {
   AVATAR_FILE_TYPES,
   AVATAR_MAX_SIZE,

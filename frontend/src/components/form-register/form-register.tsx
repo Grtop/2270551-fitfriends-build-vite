@@ -10,7 +10,7 @@ import {
   UserNameLength,
   UserPasswordLength,
   UserRole,
-} from '@fit-friends/types';
+} from '../../libs/types/src/index';
 import {
   GENDER_ZOD,
   LOCATIONS_ZOD,

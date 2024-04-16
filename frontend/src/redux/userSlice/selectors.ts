@@ -1,4 +1,4 @@
-import { IBalance, INotify, UserRole } from '@fit-friends/types';
+import { IBalance, INotify, UserRole } from '../../libs/types/src/index';
 import { AuthStatus, NameSpace, SliceStatus } from '../../constants';
 import { State } from '../store';
 import { UserRdo } from '../../types/user.rdo';

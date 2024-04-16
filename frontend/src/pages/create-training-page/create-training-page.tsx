@@ -11,7 +11,7 @@ import {
   TrainingTitleLength,
   UserLevel,
   UserTypesTraining,
-} from '@fit-friends/types';
+} from '../../libs/types/src/index';
 import {
   AppRoute,
   TrainingTypeImageMap,

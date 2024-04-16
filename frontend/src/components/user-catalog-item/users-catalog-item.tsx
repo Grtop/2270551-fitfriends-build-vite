@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { UserRdo } from '../../types/user.rdo';
 import { IconCrown, IconLocation } from '../../helper/svg-const';
 import { AppRoute } from '../../constants';
-import { UserRole } from '@fit-friends/types';
+import { UserRole } from '../../libs/types/src/index';
 
 type UsersCatalogItemProps = {
   user: UserRdo;

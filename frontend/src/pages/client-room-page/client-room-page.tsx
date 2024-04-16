@@ -17,7 +17,7 @@ import {
   UserLocation,
   UserNameLength,
   UserTypesTraining,
-} from '@fit-friends/types';
+} from '../../libs/types/src/index';
 import {
   updateUserAction,
   uploadAvatarAction,

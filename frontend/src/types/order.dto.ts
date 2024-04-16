@@ -1,4 +1,4 @@
-import { TypeOfOrder, TypeOfPayment } from '@fit-friends/types';
+import { TypeOfOrder, TypeOfPayment } from '../libs/types/src/index';
 
 export class OrderDto {
   public type!: TypeOfOrder;

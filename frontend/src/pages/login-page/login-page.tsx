@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useEffect } from 'react';
-import { UserPasswordLength } from '@fit-friends/types';
+import { UserPasswordLength } from '../../libs/types/src/index';
 import { getIsAuth, getIsTrainer } from '../../redux/userSlice/selectors';
 import { useNavigate } from 'react-router-dom';
 import { AppRoute } from '../../constants';

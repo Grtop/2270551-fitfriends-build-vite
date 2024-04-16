@@ -4,7 +4,7 @@ import TrainingThumbnail from '../../components/training-thumbnail/training-thum
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../redux/store';
 import { getTrainingsBalance } from '../../redux/userSlice/selectors';
-import { TypeOfOrder } from '@fit-friends/types';
+import { TypeOfOrder } from '../../libs/types/src/index';
 import { AppRoute, MAX_PURCHASES_ITEMS_COUNT_PER_PAGE } from '../../constants';
 import {
   fetchBalanceAction,

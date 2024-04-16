@@ -1,4 +1,4 @@
-import { IUser, ITokenPayload } from '@fit-friends/types';
+import { IUser, ITokenPayload } from '../../../types/src/index';
 
 export function createJWTPayload(user: IUser): ITokenPayload {
   return {

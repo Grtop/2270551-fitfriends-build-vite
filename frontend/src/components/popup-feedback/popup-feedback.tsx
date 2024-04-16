@@ -1,7 +1,7 @@
 import { ChangeEvent, useEffect, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../redux/store';
 import { getAvatar, getUserName } from '../../redux/userSlice/selectors';
-import { FeedbackTextLength } from '@fit-friends/types';
+import { FeedbackTextLength } from '../../libs/types/src/index';
 import {
   createFeedbackAction,
   fetchFeedbacksAction,

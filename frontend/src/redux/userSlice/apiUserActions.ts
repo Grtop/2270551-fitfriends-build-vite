@@ -9,7 +9,7 @@ import { AxiosError } from 'axios';
 import { toast } from 'react-toastify';
 import { UpdateUserDto } from '../../types/update-user.dto';
 import { UploadedFileRdo } from '../../types/uploaded-files.rdo';
-import { IBalance, INotify } from '@fit-friends/types';
+import { IBalance, INotify } from '../../libs/types/src/index';
 import { UserRdo } from '../../types/user.rdo';
 import { createQueryString } from '../../helper/utils';
 import { UserQuery } from '../../types/user.query';

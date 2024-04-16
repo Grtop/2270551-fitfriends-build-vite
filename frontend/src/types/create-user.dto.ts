@@ -1,4 +1,4 @@
-import { IClient, ITrainer, UserTypesTraining } from '@fit-friends/types';
+import { IClient, ITrainer, UserTypesTraining } from '../libs/types/src/index';
 
 export class CreateUserDto {
   public name!: string;

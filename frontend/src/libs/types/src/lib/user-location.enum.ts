@@ -1,7 +1,7 @@
 export enum UserLocation {
-  Pioneer = 'Пионерская',
-  Petrograd = 'Петроградская',
-  Udelya = 'Удельная',
-  Stars = 'Звёздная',
+  Pioneer = 'Фрунзенская',
+  Petrograd = 'Якиманка',
+  Udelya = 'Партизанская',
+  Stars = 'Кутузовский',
   Sport = 'Спортивная',
 }

@@ -6,7 +6,7 @@ import {
   UserLocation,
   UserRole,
   UserTypesTraining,
-} from '@fit-friends/types';
+} from '../../libs/types/src/index';
 import {
   FILTER_QUERY_DELAY,
   MAX_LOCATION_TYPES_COUNT_PER_PAGE,

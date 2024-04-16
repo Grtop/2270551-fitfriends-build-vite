@@ -5,7 +5,7 @@ import {
   TrainingDuration,
   UserRole,
   UserTypesTraining,
-} from '@fit-friends/types';
+} from '../libs/types/src/index';
 
 export class UserRdo {
   public userId!: number;

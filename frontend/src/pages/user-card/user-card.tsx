@@ -8,7 +8,7 @@ import UserCardTrainer from '../../components/user-card-trainer/user-card-traine
 import UserCardClient from '../../components/user-card-client/user-card-client';
 import { ArrowLeft } from '../../helper/svg-const';
 import { fetchInPersonalOrdersAction } from '../../redux/userSlice/apiUserActions';
-import { UserRole } from '@fit-friends/types';
+import { UserRole } from '../../libs/types/src/index';
 
 function UserCard(): JSX.Element {
   const dispatch = useAppDispatch();

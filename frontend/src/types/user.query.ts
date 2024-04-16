@@ -1,4 +1,4 @@
-import { DefaultUsersQuery } from '@fit-friends/types';
+import { DefaultUsersQuery } from '../libs/types/src/index';
 
 export class UserQuery {
   public limit?: number = DefaultUsersQuery.Limit;

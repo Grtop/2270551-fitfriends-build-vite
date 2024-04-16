@@ -1,5 +1,5 @@
 import { useAppDispatch, useAppSelector } from '../../redux/store';
-import { OrderStatus, UserRole } from '@fit-friends/types';
+import { OrderStatus, UserRole } from '../../libs/types/src/index';
 import { MAX_DIFF_IN_MILLISECONDS } from '../../constants';
 import { UserRdo } from '../../types/user.rdo';
 import { IconLocation } from '../../helper/svg-const';

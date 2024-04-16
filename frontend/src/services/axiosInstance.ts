@@ -1,4 +1,4 @@
-import axios, { InternalAxiosRequestConfig } from 'axios';
+import axios, { AxiosRequestConfig } from 'axios';
 import dayjs from 'dayjs';
 import {
   dropTokens,
@@ -19,21 +19,23 @@ export const axiosInstance = axios.create({
   timeout: REQUEST_TIMEOUT,
   headers: {
     Authorization: `Bearer ${token}`,
-  },
+  } as AxiosRequestConfig['headers'], // Add a default value to the 'headers' property
 });
 
 axiosInstance.interceptors.request.use(
-  async (config: InternalAxiosRequestConfig) => {
+  async (config: AxiosRequestConfig) => {
     const token = getAccessToken();
     if (!token) {
-      config.headers.Authorization = `Bearer ${token}`;
-      return config;
+      return config; // Return the config without setting Authorization header
     }
     const decodedToken = jwtDecode(token);
     if (decodedToken.exp) {
       const isTokenExpired = dayjs.unix(decodedToken.exp).diff(dayjs()) < 1;
 
       if (!isTokenExpired) {
+        if (!config.headers) {
+          config.headers = {}; // Create headers object if it doesn't exist
+        }
         config.headers.Authorization = `Bearer ${token}`;
         return config;
       }
@@ -58,6 +60,9 @@ axiosInstance.interceptors.request.use(
           if (response.status === 200) {
             console.log('refresh token success');
             saveTokens(response.data.access_token, response.data.refresh_token);
+            if (!config.headers) {
+              config.headers = {}; // Create headers object if it doesn't exist
+            }
             config.headers.Authorization = `Bearer ${getAccessToken()}`;
             return config;
           } else if (response.status === 401) {

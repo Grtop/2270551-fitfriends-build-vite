@@ -80,10 +80,10 @@ export enum TrainerMeritLength {
 export const userGenders: string[] = ['женский', 'мужской', 'неважно'];
 
 export const userLocations: string[] = [
-  'Пионерская',
-  'Петроградская',
-  'Удельная',
-  'Звёздная',
+  'Фрунзенская',
+  'Якиманка',
+  'Кутузовский',
+  'Пртизанская',
   'Спортивная',
 ];
 

@@ -1,5 +1,5 @@
 {
-  "name": "fit-friends",
+  "name": "2270551-fitfriends-build-vite",
   "version": "4.0.0",
   "type": "module",
   "scripts": {
@@ -10,6 +10,8 @@
     "test": "vitest --passWithNoTests"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@mui/material": "^5.15.15",
     "@reduxjs/toolkit": "1.9.5",
     "axios": "^0.27.2",
     "class-transformer": "^0.5.1",
@@ -24,8 +26,11 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-helmet-async": "1.3.0",
+    "react-hook-form": "^7.51.3",
+    "react-pdf": "^7.7.1",
     "react-redux": "8.1.1",
     "react-router-dom": "6.14.0",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {

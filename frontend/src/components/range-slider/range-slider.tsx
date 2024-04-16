@@ -15,7 +15,7 @@ function RangeSlider({
   const [value, setValue] = useState<number[]>([minRangeValue, maxRangeValue]);
 
   const handleChange = (
-    event: Event,
+    _event: Event,
     newValue: number | number[],
     activeThumb: number,
   ) => {

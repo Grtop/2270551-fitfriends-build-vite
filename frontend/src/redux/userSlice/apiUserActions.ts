@@ -36,7 +36,7 @@ export const registerUserAction = createAsyncThunk<
     return data;
   } catch (err) {
     let message = 'Неизвестная ошибка user/register';
-    if (new AxiosError(err)) {
+    if (err instanceof AxiosError) {
       message = err.response?.data.message;
     }
     toast.error(message);
@@ -56,7 +56,7 @@ export const loginUserAction = createAsyncThunk<
   } catch (err) {
     let message = 'Неизвестная ошибка user/login';
 
-    if (new AxiosError(err)) {
+    if (err instanceof AxiosError) {
       message = err.response?.data.message;
     }
     toast.error(message);
@@ -73,7 +73,7 @@ export const logoutAction = createAsyncThunk<void, undefined, AsyncThunkConfig>(
     } catch (err) {
       let message = 'Неизвестная ошибка user/logout';
 
-      if (new AxiosError(err)) {
+      if (err instanceof AxiosError) {
         message = err.response?.data.message;
       }
       toast.error(message);
